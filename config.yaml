@@ -1,0 +1,16 @@
+project:
+  name: "voice_cloning_vits"
+  output_dir: "outputs/"
+  logs_dir: "logs/"
+
+dataset:
+  name: "vctk"
+  path: "data/VCTK/"
+  sampling_rate: 22050
+
+model:
+  base_model: "tts_models/en/vctk/vits"
+  restore_path: null
+
+inference:
+  text_input: "This is a placeholder sentence."
